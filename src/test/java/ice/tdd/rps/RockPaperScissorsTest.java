@@ -19,4 +19,20 @@ public class RockPaperScissorsTest {
         Assert.assertEquals(Result.PLAYER_ONE, underTest.eval(playerOneChoice, playerTwoChoice));
     }
 
+
+//    ● Given I have chosen scissors
+//    When the opponent chooses paper
+//    Then I should win
+//
+    @Test
+    public void scissorsWinsOverPaper() {
+        // Given I have chosen scissors
+        var playerOneChoice = Choice.SCISSORS;
+        //When the opponent chooses paper
+        var playerTwoChoice = Choice.PAPER;
+
+        //Then I should win
+        Assert.assertEquals(Result.PLAYER_ONE, underTest.eval(playerOneChoice, playerTwoChoice));
+    }
+
 }
